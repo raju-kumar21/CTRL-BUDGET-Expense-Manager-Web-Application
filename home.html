@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style type="text/css">
+			 *{
+              margin:0;
+              padding:0;
+              }
+		
+ 			body {
+             overflow:hidden;
+             /*background:rgba(255,140,0,0.6);*/
+             /*background:lightblue;*/
+             background-image:url(bg.jpge.jpg);
+             background-attachment: fixed;
+             background-repeat: no-repeat;
+             
+             }
+          nav{
+              /*overflow:hidden;*/
+              margin-top:60px;
+              margin:0px 0px 0px 0px;
+              padding:0px 0px 0px 0px;
+              /*height:90px;
+              width: 100%;*/
+              height:70px;
+              width: 100%;
+              
+              background-color:rgb(255, 255,255);
+              /*display: inline-block;*/
+              position:fixed;
+              z-index: 1;
+              /*border: 10px solid rgba(255,255,255,0.9);*/
+              }
+        input[type=text],input[type=number], input[type=password] {
+  width: 100%;
+  padding: 7px;
+  height: 30px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,input[type=number]:focus,input[type=password]:focus {
+  background-color:rgba(0,255, 0,0.5);
+  outline: none;
+}
+        .inner2
+          {
+          
+            margin:0px;
+            padding:0px;
+            overflow:auto;
+            height: 100vh;
+            background-color:#00bfff;
+          }
+        button {
+  background-color:red;
+  font-size: 30px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity:0.6;
+    background-color: green;
+}
+        @media screen and (max-width: 800px) {
+  .cancelbtn, .signupbtn ,.btn2{
+             width: 100%;
+          }
+        }
+        .container {
+              padding: 16px;
+            }
+          nav a 
+          {
+
+            text-decoration: none;
+            color:navy;
+            font-size: 30px;
+            padding-right: 80px;
+            font-family:vardana;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            /*border-radius: 100px 100px 100px 100px;*/
+          }
+          nav a:hover
+          {
+            color: darkgreen;
+            cursor: help;
+          }
+          nav ul
+          {
+            line-height: 50%;
+            float: right;
+            display: flex;
+            line-height: 100px;
+          }
+          nav ul li
+          {
+            line-height: 50%;
+            list-style: none;
+          }
+          nav ul li a
+          {
+            text-decoration: none;
+            color:navy;
+            font-size: 30px;
+            padding-right: 80px;
+            font-family:vardana;
+          }
+          .inner4
+          {
+            overflow:hidden; 
+            margin:0px;
+            padding:0px;
+            /*overflow:auto;*/
+            color:black;
+            /*display: flex;*/
+            font-size: 30px;
+            height: 100vh;
+            /*background-color:lightblue;*/
+            
+          }
+          .inner1
+      {
+        margin: 0px;
+        padding: 0px;
+        /*background-color:rgba(255,140,0,0.5);*/
+        background-color:rgba(0,0,0,0.8);
+        overflow:auto;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .inner1 h1
+      {
+        font-family: verdana;
+        margin-top:21%;
+        font-size: 60px;
+        color: white;
+      }
+        .btn1
+      {
+        background-color:lightblue; 
+        /*margin-top:50%;*/
+        color:navy; 
+        font-size:20px;
+        height:200px; 
+        width: 300px; 
+        border-radius: 20px;"
+        /*display: inline-block;*/
+        float: center;
+        font-family: verdana;
+      }
+        .btn1:hover
+        {
+            background-color: darkgreen;
+            border: none;
+        }
+          .inner4 div 
+          { 
+            
+            overflow: auto;
+            justify-content:space-around ;
+            font-family: verdana;
+            color: white;
+            font-size: 20px;
+            text-align: justify-all;
+            background-color:rgba(0,0,0,0.9);
+            height:70vh;
+            width: 100%;
+          }
+          .inner4 div h1
+          {
+            text-align: center;
+          }
+        .footer{
+                   position: fixed;
+                   left: 0;
+                   bottom: 0;
+                   height: 100px;
+                   width: 100%;
+                   background-color:black;
+                   color: white;
+                   text-align: center;
+                }
+        .footer h3
+        {
+            margin-top:50px;
+        }
+   
+       @media (max-width:800px) 
+			{
+			  .nav a{
+			  			overflow: auto;
+			          text-decoration: none;
+/*			            color:white;*/
+			            font-size: 10px;
+			            padding-right:30px;
+			            font-family:vardana;
+			            height: 100px;
+			            width: 100px;
+			            line-height: 100px;
+			  }
+			  .nav{
+/*			     background-color: red;*/
+			  }
+			  .inner4
+			  {
+			    flex: none;
+			    font-size: 20px;
+
+			  }
+                .inner1 h1
+                    {
+                        font-size: 20px;
+                        margin-top: 60%;
+                    }
+                .btn1
+                    {
+                        font-size: 20px;
+                        margin-top: 30%;
+                    }
+                div p{
+                    font-size:10px;
+                }
+                 .inner2{height: 100vh;}
+    input[type=text],input[type=number], input[type=password] {
+                  width: 100%;
+                  padding: 7px;
+                  height: 20px;}
+			}
+
+	</style>
+</head>
+<body>
+<nav class="nav">
+		<a href="">Ct₹l Budget</a>
+		<ul>
+			<li><a href="#about"><i class="fas fa-book-reader"></i>About</a></li>
+			<li><a href="#Sign"><i class="fas fa-cog"></i>change password</a></li>
+			
+			<li><a href="index.html"><i class="fas fa-sign-in-alt"></i>Log out</a></li>
+		</ul>
+	</nav>
+    <div class="inner1">
+        <h1 style="top: 250px;">you don't have any active plan</h1>
+        <a href="#plan">
+            <button class="btn1"><i class="far fa-plus-square"></i>Create your new plan</button></a>
+
+       </div>
+<div class="inner4" id="about">
+    <div><br><br>
+<br><br>
+<br><br>
+
+    <h1 style="text-decoration:underline;">Who are we?</h1><br><br>
+     <p>We are a group of young technocrats who came up with an idea of solving budget and time issues which we usually face in our daily lives. We are here to provide a budget controller according to your aspects.<br>
+      Budget control is the biggest financial issue in the present world. One should look after their budget control to get ride off from their financial crisiso
+      <br><br>
+      Contact US<br>
+      E-mail :rajukumar852124@gmail.com<br>
+      Mobile :+91 6205560461
+    </p>
+    </div>
+    <div>
+      <h1 style="text-decoration:underline;" >Why choose us?</h1><br><br>
+     <p> We provide with a predominant way to control and manage your budget estimations with ease of accessing for multiple users.</p>
+    </div>
+  </div>
+    <span id="plan">""</span>
+    <div class="inner2">
+     <form action="#">
+      <fieldset style="margin:30px; background-color: aqua;"><legend style="color: red;"><h1 style="margin:20px">Create plan</h1></legend>
+      <div class="container">
+    <p>Please fill in this form to create ypur plan</p>
+    <hr>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter valid Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Password (Min. 6 character" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+    
+    <label for="mob" ><b>Phone Number</b></label>
+    <input type="number" placeholder="Enter valid Phone Number (Ex:6205560461)" name="mob" required>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    <!-- <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+ -->
+    <div class="clearfix">
+      <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</fieldset>
+</form>
+  </div>
+    
+<div class="footer">
+	<h3>Copyright © Control Budget. All Rights Reserved&nbsp|
+	<a href="tel:6205560461" style="text-decoration:none; color:white;">
+	<i class="fa fa-phone" aria-hidden="true"></i>6205560461.
+	</a>
+	</h3>
+</div>
+</body>
+</html>
